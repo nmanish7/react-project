@@ -7,6 +7,7 @@ import { PieChartComponent } from "./Components/Charts/PieChartComponent.jsx";
 import { LineChartComponent } from "./Components/Charts/LineChartComponent.jsx";
 import { TableComponent } from "./Components/Charts/TableComponent.jsx";
 import Papa from "papaparse";
+import { Counter } from "./Counter.jsx";
 
 const graphData = {
   labels: ["January", "February", "March", "April", "May"],
@@ -66,6 +67,7 @@ function App() {
           </ColumnComponent>
           <ColumnComponent className="col-md-4">
             {/* <LineChartComponent data={graphData} /> */}
+            <Counter />
           </ColumnComponent>
           <ColumnComponent className="col-md-4">
             <PieChartComponent data={graphData} />
